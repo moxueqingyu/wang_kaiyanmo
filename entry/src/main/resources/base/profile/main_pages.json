@@ -2,6 +2,10 @@
   "src": [
     "pages/Index",
     "pages/SplashPage",
-    "pages/MainPage"
+    "pages/MainPage",
+    "pages/home/HomePage",
+    "pages/find/FindPage",
+    "pages/hot/HotPage",
+    "pages/mine/MinePage"
   ]
 }
