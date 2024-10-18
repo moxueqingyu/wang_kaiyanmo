@@ -1,20 +1,21 @@
+import { CommonTopBar } from '../../views/CommonTopBar';
+
+/**
+ * 首页
+ */
+
 @Entry
 @Component
 export struct HomePage {
   @State message: string = 'Hello World';
 
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('HomePageHelloWorld')
-        .fontSize(50)
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
+    Column(){
+      CommonTopBar({title : '首页',backButton : false,alpha :1})
+        .align(Alignment.TopStart)
+      Stack(){
+
+      }
     }
-    .height('100%')
-    .width('100%')
   }
 }
